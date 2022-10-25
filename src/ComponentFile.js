@@ -1,0 +1,12 @@
+export { default as Announcement } from "./components/Announcement";
+export { default as Categories } from "./components/Categories";
+export { default as Footer } from "./components/Footer";
+export { default as Navbar } from "./components/Navbar";
+export { default as Newsletter } from "./components/Newsletter";
+export { default as Silder } from "./components/Slider";
+export { default as Cart } from "./pages/Cart";
+export { default as Home } from "./pages/Home";
+export { default as Login } from "./pages/Login";
+export { default as Product } from "./pages/Product";
+export { default as ProductList } from "./pages/ProductList";
+export { default as Register } from "./pages/Register";
