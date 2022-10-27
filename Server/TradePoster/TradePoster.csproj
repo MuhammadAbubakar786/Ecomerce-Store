@@ -1,0 +1,60 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <UserSecretsId>aspnet-TradePoster-247BACD3-9C88-4EE2-AC0F-E91B619A2B94</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Services\Packages\**" />
+    <Compile Remove="Services\ProductListing\**" />
+    <Content Remove="Services\Packages\**" />
+    <Content Remove="Services\ProductListing\**" />
+    <EmbeddedResource Remove="Services\Packages\**" />
+    <EmbeddedResource Remove="Services\ProductListing\**" />
+    <None Remove="Services\Packages\**" />
+    <None Remove="Services\ProductListing\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Data\BusinessCategory.cs" />
+    <Compile Remove="Data\BusinessHours.cs" />
+    <Compile Remove="Data\BusinessHoursType.cs" />
+    <Compile Remove="Data\Company.cs" />
+    <Compile Remove="Data\ListingBusinessHours.cs" />
+    <Compile Remove="Data\ListingCategory.cs" />
+    <Compile Remove="Data\ListingReview.cs" />
+    <Compile Remove="Data\ListingType.cs" />
+    <Compile Remove="Data\Packages.cs" />
+    <Compile Remove="Data\ProductListing.cs" />
+    <Compile Remove="Data\ProductListingReactions.cs" />
+    <Compile Remove="Data\Testmonial.cs" />
+    <Compile Remove="Data\UserSubscriptionMatrix.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="5.0.15" />
+    <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="5.0.7" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="5.0.12" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="5.0.12" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.15" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.15">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="5.0.2" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.3.0" />
+    <PackageReference Include="System.Security.Cryptography.ProtectedData" Version="6.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Areas\HomePage\Data\" />
+    <Folder Include="Areas\HomePage\Models\" />
+    <Folder Include="Areas\HomePage\Views\" />
+    <Folder Include="Areas\UserManagement\Data\" />
+    <Folder Include="Areas\UserManagement\Views\" />
+    <Folder Include="wwwroot\Uploads\" />
+  </ItemGroup>
+
+</Project>
